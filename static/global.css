@@ -1,0 +1,163 @@
+:root {
+  --bg: #dfe3ff;
+  --bg-dark: #8c99ec;
+  --text: #270973;
+  --link: #f826a8;
+  --blue: #0428ac;
+  --yellow: #ffd500;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+#sapper {
+  color: #333;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'Menlo', 'Segoe UI', Roboto Mono, monospace;
+  display: flex;
+  align-items: flex-start;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input,
+button,
+select,
+textarea,
+label,
+#formSod,
+#formEmail {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4rem;
+  margin: 0 0 0.5rem 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+input[type='range'] {
+  height: 0;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+#formPost {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  max-width: 40ch;
+  float: right;
+}
+#formEmail,
+.formLink {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: center;
+}
+#inEmail {
+  flex: 1;
+}
+#formSod {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+  overflow: scroll;
+}
+#postWrapper {
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  margin: 2rem 1rem auto;
+  border-left: 3px solid var(--bg-dark);
+}
+.postSod {
+  white-space: pre-line;
+  padding-bottom: 0.5rem;
+}
+.post > * {
+  margin: 0 0 0.5rem 0;
+}
+.post > :last-child {
+  margin: 0;
+}
+.postHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+.plusButton {
+  font-size: 1.5rem;
+  padding: 0 0.4rem;
+  margin: 0;
+}
+.inLink {
+  flex: 1;
+  padding: 0 0.4rem;
+  height: 2rem;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+summary {
+  color: var(--yellow);
+  text-decoration: underline;
+  cursor: pointer;
+}
+details {
+  background-color: var(--bg-dark);
+  padding: 0.5rem;
+}
